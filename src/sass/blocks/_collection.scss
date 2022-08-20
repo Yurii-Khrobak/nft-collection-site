@@ -1,0 +1,64 @@
+.collection {
+	margin-top: 100px;
+}
+
+.collection-title {
+	color: $title;
+	text-align: center;
+}
+
+.collection-category {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.collection-title__main {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 58px;
+
+	margin-bottom: 75px;
+}
+
+.collection__row {
+	display: flex;
+	column-gap: 205px;
+}
+
+.card-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 60px;
+}
+
+.card-list__item {
+	max-width: 330px;
+	position: relative;
+	& + & {
+		&::before {
+			content: '';
+			width: 375px;
+			height: 1px;
+
+			background: rgba(64, 71, 86, 0.6);
+
+			position: absolute;
+			top: -30px;
+		}
+	}
+}
+
+.item-title {
+	font-family: 'Montserrat';
+	color: $title;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 22px;
+
+	margin-bottom: 20px;
+}
+
+.collection-img {
+	margin-right: -100px;
+}

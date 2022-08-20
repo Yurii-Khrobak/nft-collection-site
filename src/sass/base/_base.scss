@@ -1,0 +1,26 @@
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $text;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.container {
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&--fluid {
+		max-width: unset;
+		width: 100%;
+	}
+
+	&--no-padding {
+		padding: 0;
+	}
+}
+
+.none {
+	display: none;
+}
